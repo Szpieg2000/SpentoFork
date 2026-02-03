@@ -319,8 +319,9 @@ body {
 }
 
 .listTitle {
-  color: var(--accent);
+  color: var(--fg);
   font-weight: bold;
+  background-color: var(--background);
 }
 
 .listItem {
