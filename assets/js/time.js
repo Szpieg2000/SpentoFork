@@ -14,7 +14,7 @@ function displayClock() {
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
 	var hh = d.getHours();
 	var ampm = '';
-	var dd = d.toLocaleDateString("en-US", options);
+	var ddd = d.toLocaleDateString("en-US", options);
 
 	if (CONFIG.twelveHourFormat) {
 		ampm = hh >= 12 ? ' pm' : ' am';
@@ -26,7 +26,7 @@ function displayClock() {
 	document.getElementById('separator').innerHTML = ' : ';
 	document.getElementById('minutes').innerText = min + ampm;
 
-	document.getElementyById("day").innerText = dd;
+	document.getElementyById("day").innerHTML = ddd;
 	//document.getElementById('month').innerText = mm;
 	//document.getElementById('day').innerText = dd;
 
