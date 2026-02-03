@@ -6,13 +6,15 @@
 window.onload = displayClock();
 function displayClock() {
 	const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
+	var options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+	
 	var d = new Date();
 	var mm = monthNames[d.getMonth()];
 	var dd = d.getDate();
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
 	var hh = d.getHours();
 	var ampm = '';
+	var dd = d.toLocaleDateString("en-US", options);
 
 	if (CONFIG.twelveHourFormat) {
 		ampm = hh >= 12 ? ' pm' : ' am';
@@ -24,8 +26,9 @@ function displayClock() {
 	document.getElementById('separator').innerHTML = ' : ';
 	document.getElementById('minutes').innerText = min + ampm;
 
-	document.getElementById('month').innerText = mm;
-	document.getElementById('day').innerText = dd;
+	document.getElementyById("day").innerText = dd;
+	//document.getElementById('month').innerText = mm;
+	//document.getElementById('day').innerText = dd;
 
 	setTimeout(displayClock, 1000);
 }
