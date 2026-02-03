@@ -166,7 +166,7 @@ body {
 
 #day {
   font-size: var(--fg-date)
-};
+}
 /*#month,
 #day {
   font-size: var(--fg-date);
