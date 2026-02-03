@@ -319,7 +319,7 @@ body {
 }
 
 .listTitle {
-  color: #300149;
+  color: --accent;
   font-weight: bold;
 }
 
