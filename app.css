@@ -155,6 +155,7 @@ body {
   justify-content: center;
 }
 
+#day,
 #hour,
 #separator,
 #minutes {
@@ -163,7 +164,10 @@ body {
   color: var(--fg);
 }
 
-#month,
+#day {
+  font-size: var(--fg-date)
+};
+/*#month,
 #day {
   font-size: var(--fg-date);
   font-weight: bold;
@@ -172,7 +176,7 @@ body {
 
 #day {
   margin-left: 1.5rem;
-}
+}*/
 
 #greetings {
   font-size: var(--fg-secondary);
@@ -309,6 +313,9 @@ body {
   color: var(--fg);
   width: var(--icon);
   height: var(--icon);
+  font-size: var(--fg-list);
+  color: var(--bg);
+  width: 90%;
 }
 .listItem {
   text-decoration: none;
