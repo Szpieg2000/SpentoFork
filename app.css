@@ -98,6 +98,7 @@ body {
 }
 
 .container {
+right: -7rem;
   width: 145vh;
   height: 85vh;
   display: grid;
@@ -105,6 +106,8 @@ body {
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 30px;
   padding: 20px;
+  margin: 0 auto; /* Center horizontally */
+  position: relative; /* Ensure it doesn't shift */
 }
 
 .card {
@@ -228,6 +231,25 @@ body {
   grid-column: 3 / span 2;
 }
 
+
+.linksBlockSideRight {
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 2;
+}
+.containerSideRight {
+  position: absolute; /* Position it independently */
+  right: 2rem; /* Adjust this value to move it further to the right */
+  top: 50%; /* Center it vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  width: 35vh;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 5px;
+}
+
 .buttonsContainer {
   width: 100%;
   height: 100%;
@@ -242,7 +264,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* Enable stacking of children */
   width: 100%;
+  height: 100%;
+}
+
+.buttonIcon,
+.buttonTitle {
+  position: absolute; /* Stack elements on top of each other */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center elements */
 }
 
 .buttonIcon {
@@ -280,6 +312,23 @@ body {
 }
 .button:hover svg {
   stroke: var(--sfg);
+}
+
+.button:hover .buttonTitle {
+  opacity:1;
+
+}
+
+.button:hover .buttonIcon {
+  opacity:0;
+
+}
+
+.buttonTitle {
+  color: var(--fg);
+  font-weight: bold;
+  text-decoration:none;
+  opacity:0;
 }
 
 .listsContainer {
@@ -338,6 +387,42 @@ body {
 .listItem:hover {
   background-color: var(--accent);
   color: var(--sfg);
+}
+
+/* Styles for collapsible mini pages */
+.miniPage {
+  margin-bottom: 1rem;
+  border: 1px solid var(--sfg);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  transition: height 0.3s ease; /* Smooth height transition */
+}
+
+.miniPage-header {
+  background-color: var(--cards);
+  color: var(--fg);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.miniPage-content {
+  height: 0; /* Hidden by default */
+  opacity: 0;
+  padding: 0 1rem;
+  background-color: var(--background);
+  transition: opacity 0.3s ease, padding 0.3s ease; /* Smooth opacity and padding transitions */
+}
+
+.miniPage.expanded {
+  height: auto; /* Expand smoothly */
+}
+
+.miniPage.expanded .miniPage-content {
+  height: auto;
+  opacity: 1;
+  padding: 1rem;
 }
 
 /* M E D I A - Q U E R I E S */
