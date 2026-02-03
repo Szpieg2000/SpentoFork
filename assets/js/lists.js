@@ -8,7 +8,7 @@ const generateFirstListsContainer = () => {
 		let item = `
         <div class="card list list__${list.id}" id="list_${list.id}">
 
-          ${list.icon}
+          <span class="listTitle">${list.icon}</span>
           <a
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
           href="${list.links[0].link}"
