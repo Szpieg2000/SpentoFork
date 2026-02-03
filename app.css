@@ -317,6 +317,12 @@ body {
   color: var(--bg);
   width: 90%;
 }
+
+.listTitle {
+  color: #300149;
+  font-weight: bold;
+}
+
 .listItem {
   text-decoration: none;
   font-size: var(--fg-list);
