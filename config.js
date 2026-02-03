@@ -53,9 +53,9 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
-			name: 'Mail',
-			icon: 'mail',
-			link: 'https://gmail.com/',
+			name: 'Youtube',
+			icon: 'youtube',
+			link: 'https://youtube.com/',
 		},
 		{
 			id: '2',
@@ -65,27 +65,27 @@ const CONFIG = {
 		},
 		{
 			id: '3',
-			name: 'Youtube',
-			icon: 'youtube',
-			link: 'https://youtube.com/',
+			name: 'Twitter',
+			icon: 'twitter',
+			link: 'https://x.com/',
 		},
 		
 		{
 			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
+			name: 'Twitch',
+			icon: 'twitch',
+			link: 'https://www.twitch.tv/',
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'Discord',
+			icon: 'bot-message-square',
+			link: 'https://discord.com',
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
+			name: 'GMail',
+			icon: 'mail',
 			link: 'https://odysee.com/',
 		},
 	],
@@ -136,29 +136,29 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'Tools',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'EZGif',
+					link: 'https://ezgif.com/',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Catbox',
+					link: 'https://catbox.moe/',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'TTS',
+					link: 'https://lazypy.ro/tts/?voice=Wiseguy&service=VoiceForge&text=Why%20Hello%20there%2C%20Old%20Sport!&lang=English&g=A',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'PMCSkin 3D',
+					link: 'https://www.planetminecraft.com/skin-editor/',
 				},
 			],
 		},
 		{
-			icon: 'binary',
+			icon: 'DOCUMENTARIES',
 			id: '2',
 			links: [
 				{
