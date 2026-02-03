@@ -179,8 +179,8 @@ body {
 }*/
 
 #greetings {
-  font-size: var(--fg-secondary);
   color: var(--fg);
+  font-size: var(--fg-secondary);
 }
 
 .weatherIcon img {
@@ -358,6 +358,7 @@ body {
 
   #greetings {
     font-size: var(--fg-secondary);
+    color: var(--fg);
   }
 
   .linksBlockRight {
