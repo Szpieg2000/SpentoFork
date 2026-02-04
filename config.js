@@ -214,6 +214,20 @@ const CONFIG = {
 					link: 'https://www.perchance.org/',
 				}
 			]
+		},
+		{
+			name: 'Resources',
+			list:true,
+			links: [
+				{
+					name: 'Incompetech, Kevin MacLeod',
+					link: 'https://incompetech.com/music/royalty-free/music.html',
+				},
+				{
+					name: 'Spriter\'s Resource',
+					link: 'https://www.spriters-resource.com/',
+				},
+			]
 		}
 	]
 };
