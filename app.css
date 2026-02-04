@@ -22,8 +22,10 @@
 
   /* Light Colors  */
   --accent: #24B51C; /* Hover color */
+  --backaccent: #63B534; /* Background hover color */
   --background: #91DB67; /* Background color */
   --cards: #63B534; /* Cards color */
+  --miniPagebg: #A3E28F; /* Mini page background color */
 
   /* Image background  */
   --imgbg: url(assets/background.jpg); /* Image URL */
@@ -36,8 +38,10 @@
 .darktheme {
   /* Dark Colors  */
   --accent: #300149; /* Hover color */
+  --backaccent: #4B0266; /* Background hover color */ 
   --background: #1E1921; /* Background color */
   --cards: #29222D; /* Cards color */
+  --miniPagebg: #3E2A4B; /* Mini page background color */
 
   /* Fonts Color */
   --fg: #3EA512; /* Foreground color */
@@ -392,7 +396,6 @@ right: -7rem;
 /* Styles for collapsible mini pages */
 .miniPage {
   margin-bottom: 1rem;
-  border: 1px solid var(--sfg);
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
@@ -407,12 +410,51 @@ right: -7rem;
   font-weight: bold;
 }
 
+.miniPage-header:hover {
+  background-color: var(--accent);
+  color: var(--sfg);
+}
+
 .miniPage-content {
   height: 0; /* Hidden by default */
   opacity: 0;
   padding: 0 1rem;
-  background-color: var(--background);
+  background-color: var(--miniPagebg);
+  color: var(--fg);
+  font-weight: bold;
   transition: opacity 0.3s ease, padding 0.3s ease; /* Smooth opacity and padding transitions */
+}
+
+.miniPage-headerlink {
+  background-color: var(--miniPagebg);
+  color: var(--fg);
+  padding: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: normal;
+}
+.miniPage-headerlink a {
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.miniPage-headerlink:hover a {
+  color: var(--sfg);
+}
+
+.miniPage-link {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: var(--fg);
+  border-radius: 5px;
+  margin:2px;
+  font-weight: normal;
+}
+
+.miniPage-link:hover,.miniPage-headerlink:hover {
+  background-color: var(--backaccent);
+  color: var(--sfg);
 }
 
 .miniPage.expanded {

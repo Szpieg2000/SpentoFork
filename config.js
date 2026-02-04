@@ -90,44 +90,6 @@ const CONFIG = {
 		},
 	],
 
-	secondButtonsContainer: [
-		{
-			id: '1',
-			name: 'Music',
-			icon: 'headphones',
-			link: 'https://open.spotify.com',
-		},
-		{
-			id: '2',
-			name: 'twitter',
-			icon: 'twitter',
-			link: 'https://twitter.com/',
-		},
-		{
-			id: '3',
-			name: 'bot',
-			icon: 'bot',
-			link: 'https://discord.com/app',
-		},
-		{
-			id: '4',
-			name: 'Amazon',
-			icon: 'shopping-bag',
-			link: 'https://amazon.com/',
-		},
-		{
-			id: '5',
-			name: 'Hashnode',
-			icon: 'pen-tool',
-			link: 'https://hashnode.com/',
-		},
-		{
-			id: '6',
-			name: 'Figma',
-			icon: 'figma',
-			link: 'https://figma.com/',
-		},
-	],
 
 	// ┬  ┬┌─┐┌┬┐┌─┐
 	// │  │└─┐ │ └─┐
@@ -181,51 +143,77 @@ const CONFIG = {
 		},
 	],
 
-	// Second Links Container
-	secondListsContainer: [
+
+	miniPages: [
 		{
-			icon: 'binary',
-			id: '1',
+			name: "Projects",
+			list:true,
 			links: [
 				{
-					name: 'Spotify',
-					link: 'https://www.spotify.com',
+					name: "Milanote",
+					link: "https://app.milanote.com/1Vbduf1cmOx377/stud-pole-games-extended-universe?p=97Wj2maX3Ek",
 				},
 				{
-					name: 'Reddit',
-					link: 'https://www.reddit.com',
+					name: "Roblox Group",
+					link: "https://www.roblox.com/groups/15165785/Stud-Pole-Games#!/about",
 				},
 				{
-					name: 'Hashnode',
-					link: 'https://www.hashnode.com',
-				},
-				{
-					name: 'Pocket',
-					link: 'https://www.pocket.com',
-				},
-			],
+					name: "GMod Addon Collection",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3116332724"
+				}
+			]
 		},
 		{
-			icon: 'github',
-			id: '2',
+			name: 'Games',
+			list:true,
 			links: [
 				{
-					name: 'Front',
-					link: 'https://www.reddit.com/r/Frontend/',
+					name: 'Jackbox',
+					link: 'https://jackbox.tv/',
 				},
 				{
-					name: 'Rust',
-					link: 'https://www.reddit.com/r/rust/',
+					name: 'Hunder Games - Bransteele',
+					link: 'https://brantsteele.net/hungergames/disclaimer.php',
 				},
 				{
-					name: 'Go',
-					link: 'https://www.reddit.com/r/golang/',
+					name: 'Murder Games - Orteil',
+					link: 'https://orteil.dashnet.org/murdergames/',
 				},
 				{
-					name: 'Repos',
-					link: 'https://github.com/migueravila',
+					name: 'Neal.Fun',
+					link: 'https://neal.fun/',
 				},
-			],
+				{
+					name: 'The Useless Web',
+					link: 'https://theuselessweb.com/',
+				}
+			]
 		},
-	],
+		{
+			name: 'Miscellanous',
+			list:true,
+			links: [
+				{
+					name: 'Messenger',
+					link: 'https://www.messenger.com/t/1625560917484906/',
+				},
+				{
+					name: 'Spacehey',
+					link: 'https://spacehey.com/szpieg2000',
+				},
+				{
+					name: 'Toyhouse',
+					link: 'https://toyhou.se/~world/228226.intertwined-strings',
+				},
+				{
+					name: 'Dropbox',
+					link: 'https://www.dropbox.com/h',
+				},
+				{
+					name: 'Perchance',
+					link: 'https://www.perchance.org/',
+				}
+			]
+		}
+	]
 };
