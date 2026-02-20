@@ -86,7 +86,7 @@ const CONFIG = {
 			id: '6',
 			name: 'GMail',
 			icon: 'mail',
-			link: 'https://odysee.com/',
+			link: 'https://gmail.com/',
 		},
 	],
 
