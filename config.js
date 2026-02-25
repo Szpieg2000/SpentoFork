@@ -1,4 +1,4 @@
-
+d
 // ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
 // ╠╩╗║╣ ║║║ ║ ║ ║
 // ╚═╝╚═╝╝╚╝ ╩ ╚═╝// ┌─┐┌─┐┌┐┌┌─┐┬┌─┐┬ ┬┬─┐┌─┐┌┬┐┬┌─┐┌┐┌
@@ -160,6 +160,10 @@ const CONFIG = {
 				{
 					name: "GMod Addon Collection",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3116332724"
+				},
+				{
+					name: "Neocities",
+					link: "https://szpieg2000.neocities.org/"
 				}
 			]
 		},
