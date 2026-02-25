@@ -1,4 +1,3 @@
-d
 // ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
 // ╠╩╗║╣ ║║║ ║ ║ ║
 // ╚═╝╚═╝╝╚╝ ╩ ╚═╝// ┌─┐┌─┐┌┐┌┌─┐┬┌─┐┬ ┬┬─┐┌─┐┌┬┐┬┌─┐┌┐┌
@@ -162,7 +161,7 @@ const CONFIG = {
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3116332724"
 				},
 				{
-					name: "Neocities",
+					name: "Neocities Site",
 					link: "https://szpieg2000.neocities.org/"
 				}
 			]
